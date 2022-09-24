@@ -1,0 +1,37 @@
+.customers-list {
+    @include centeredFlex();
+    
+    padding: 0;
+    list-style: none;
+
+    &__item:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.customers-list__icon {
+    fill: currentColor;
+}
+
+.customers-list__link {
+    @include centeredFlex();
+
+    width: 170px;
+    height: 92px;
+
+    color: $primary-icon-color;
+    fill: currentColor;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition: color $transition,
+                border $transition,
+                border-radius $transition;
+
+    &:hover,
+    &:focus {
+            border: 1px solid $primary-blue-color;
+            border-radius: 4px;
+            color: $primary-blue-color;
+        }
+}

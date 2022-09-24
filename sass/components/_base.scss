@@ -1,0 +1,35 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+
+    background: $primary-white-color;
+    color: $primary-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}

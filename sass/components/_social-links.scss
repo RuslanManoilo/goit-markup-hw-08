@@ -1,0 +1,33 @@
+.social-links {
+    @include centeredFlex();
+    padding: 0;
+
+    &__item:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.social-links__link {
+    @include centeredFlex();
+        
+    width: 44px;
+    height: 44px;
+    
+    background-color: $primary-white-color;
+    color: $primary-icon-color;
+    fill: currentColor;
+    border-radius: 50%;
+    
+    transition: background-color $transition,
+                color $transition;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-blue-color;
+        color: $primary-white-color;
+    }
+}
+
+.social-links__icon {
+    fill: currentColor;
+}

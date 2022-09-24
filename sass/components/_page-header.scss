@@ -1,0 +1,11 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+    @include centeredFlex();
+}
+
+.main-nav {
+    @include centeredFlex();
+}

@@ -1,0 +1,37 @@
+.nav-contacts {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+
+    list-style: none;
+}
+
+.nav-contacts__item {
+    &:not(:first-child) {
+        margin-left: 50px;
+    }
+}
+    
+.nav-contacts__link {
+    @include centeredFlex();
+    
+    fill: currentColor;
+    color: $primary-text-color;
+    
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $primary-blue-color;
+    }
+}
+
+.nav-contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

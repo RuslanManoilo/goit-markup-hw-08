@@ -1,0 +1,119 @@
+.modal-form {
+    
+}
+
+.modal-form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    color: $primary-black-color;
+
+    &:not(:first-child) {
+            margin-top: 10px;
+        }
+}
+
+.modal-form__text {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    
+    color: $primary-text-color;
+    
+    margin-bottom: 4px;
+}
+
+.modal-form__input {
+    width: 100%;
+    margin: 0;
+    padding: 11px 12px 11px 42px;
+    
+    cursor: pointer;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    transition: border $transition,
+                outline-color $transition,
+                border-radius $transition;
+
+    &:focus,
+    &:hover {
+        border: 1px solid $primary-blue-color;
+        border-radius: 4px;
+        outline-color: $primary-blue-color;
+    }
+}
+
+.modal-form__placeholder {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    
+    padding: 12px 16px;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form__field-checkbox {
+    @include centeredFlex();
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.modal-form__label-checkbox {
+    margin-left: 8px;
+    
+    line-height: 1.71;
+    color: $primary-text-color;
+}
+
+.modal-form__label-link {
+    color: $primary-blue-color;
+}
+
+.modal-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    
+    cursor: pointer;
+    fill: currentColor;
+    
+    transition: color $transition;
+
+    .modal-form__input:focus+&,
+    .modal-form__input:hover+& {
+        color: $primary-blue-color;
+    }
+}
+
+.modal-form__input-checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.modal-form__checkbox-icon {
+    top: 50%;
+    width: 16px;
+    height: 15px;
+    
+    border: 2px solid $primary-black-color;
+    border-radius: 4px;
+
+.modal-form__input-checkbox:checked+& {
+        border-color: $primary-blue-color;
+        background-color: $primary-blue-color;
+        background-image: url('../../images/icon-check.svg');
+        background-size: contain;
+        background-origin: border-box;
+    }
+}
