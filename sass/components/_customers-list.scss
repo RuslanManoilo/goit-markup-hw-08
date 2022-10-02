@@ -1,8 +1,5 @@
 .customers-list {
     @include centeredFlex();
-    
-    padding: 0;
-    list-style: none;
 
     &__item:not(:first-child) {
         margin-left: 30px;

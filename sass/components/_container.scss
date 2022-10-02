@@ -1,13 +1,22 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
-    /*outline: 2px solid tomato;*/
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
 }
 
 .container--baseline {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
