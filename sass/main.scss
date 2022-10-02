@@ -1,53 +1,63 @@
+// utils styles
 @import './utils/variables';
 
 @import './utils/_mixins';
 
 @import './utils/visually-hidden';
 
-@import './components/base';
+// base styles
+@import './base/base';
 
+@import './base/reset';
+
+// components styles
 @import './components/container';
 
 @import './components/section';
 
-@import './components/page-header';
-
 @import './components/logo';
-
-@import './components/nav-site';
-
-@import './components/nav-contacts';
-
-@import './components/hero';
 
 @import './components/btn';
 
-@import './components/features';
-
-@import './components/about';
-
-@import './components/team-list';
-
 @import './components/social-links';
 
-@import './components/customers-list';
+// header styles
+@import './components/header/page-header';
 
-@import './components/footer';
+@import './components/header/nav-site';
 
-@import './components/footer-aside';
+@import './components/header/nav-contacts';
 
-@import './components/footer-social-links';
+// main styles
+@import './components/main/hero';
 
-@import './components/subscribe-form';
+@import './components/main/features';
 
-@import './components/portfolio-list';
+@import './components/main/about';
 
-@import './components/portfolio-btn';
+@import './components/main/team-list';
 
-@import './components/samples-list';
+@import './components/main/customers-list';
 
-@import './components/backdrop';
+// footer styles
+@import './components/footer/footer';
 
-@import './components/modal';
+@import './components/footer/footer-aside';
 
-@import './components/modal-form';
+@import './components/footer/footer-social-links';
+
+@import './components/footer/subscribe-form';
+
+// portfolio styles
+@import './components/portfolio/portfolio-list';
+
+@import './components/portfolio/portfolio-btn';
+
+@import './components/portfolio/samples-list';
+
+// modal styles
+@import './components/modal/backdrop';
+
+@import './components/modal/modal';
+
+@import './components/modal/modal-form';

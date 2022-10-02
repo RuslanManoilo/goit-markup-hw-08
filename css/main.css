@@ -119,22 +119,6 @@ textarea {
   background-color: #F5F4FA;
 }
 
-.page-header {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.page-header__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -153,9 +137,104 @@ textarea {
   display: flex;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .logo--position {
+    justify-content: center;
+  }
+}
 
 .logo--white {
   color: #ffffff;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn--position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 10px 28px;
+}
+@media screen and (max-width: 1199px) {
+  .btn--position {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+.btn__icon {
+  margin-left: 10px;
+}
+
+.btn--padding {
+  width: 200px;
+  padding: 10px 28px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.social-links__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #AFB1B8;
+  fill: currentColor;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links__link:hover, .social-links__link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.social-links__icon {
+  fill: currentColor;
+}
+
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-site {
@@ -266,47 +345,16 @@ textarea {
   color: #ffffff;
 }
 
-.btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  color: #ffffff;
-  background-color: #2196f3;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn:hover, .btn:focus {
-  background-color: #188CE8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.btn--position {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  padding: 10px 28px;
-}
-
-.btn__icon {
-  margin-left: 10px;
-}
-
-.btn--padding {
-  width: 200px;
-  padding: 10px 28px;
-}
-
 .features {
-  display: flex;
+  display: block;
 }
-.features__item:not(:first-child) {
-  margin-left: 30px;
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .features__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .features__bg {
@@ -315,9 +363,14 @@ textarea {
   justify-content: center;
   margin-bottom: 30px;
   height: 120px;
-  width: 270px;
+  width: 100%;
   background-color: #F5F4FA;
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .features__bg {
+    width: 270px;
+  }
 }
 
 .features__icon {
@@ -329,6 +382,7 @@ textarea {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
+  text-align: center;
   margin-bottom: 10px;
   color: #212121;
 }
@@ -370,9 +424,12 @@ textarea {
 }
 
 .team-list {
-  display: flex;
-  padding: 0;
-  list-style: none;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+  }
 }
 
 .team-list__bg {
@@ -380,13 +437,18 @@ textarea {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list__bg:not(:first-child) {
-  margin-left: 30px;
+.team-list__bg:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team-list__meta {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-list__meta {
+    padding-bottom: 30px;
+  }
 }
 
 .team-list__title {
@@ -394,57 +456,43 @@ textarea {
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
-  color: #212121;
   text-align: center;
   margin-bottom: 10px;
+  color: #212121;
 }
 
 .team-list__text {
-  text-align: center;
-  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-.social-links__item:not(:first-child) {
-  margin-left: 10px;
-}
-
-.social-links__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: #ffffff;
-  color: #AFB1B8;
-  fill: currentColor;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-links__link:hover, .social-links__link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
-.social-links__icon {
-  fill: currentColor;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .customers-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+  margin: -15px;
 }
-.customers-list__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .customers-list__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customers-list__item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .customers-list__icon {
@@ -455,7 +503,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   color: #AFB1B8;
   fill: currentColor;
@@ -482,6 +529,16 @@ textarea {
   flex-grow: 1;
 }
 
+.footer-aside {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-aside__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .footer-aside__item:not(:first-child) {
   margin-top: 9px;
 }
@@ -505,8 +562,15 @@ textarea {
 }
 
 .footer-social-links {
-  margin-left: 70px;
-  margin-right: 93px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social-links {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .footer-social-links__title {
@@ -515,6 +579,11 @@ textarea {
   line-height: 1.15;
   margin-bottom: 20px;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .footer-social-links__title {
+    text-align: center;
+  }
 }
 
 .footer-links {
@@ -558,9 +627,16 @@ textarea {
 .subscribe-form {
   display: flex;
 }
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    display: block;
+  }
+}
 
-.subscribe-form__label {
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe-form__label {
+    margin-right: 12px;
+  }
 }
 
 .subscribe-form__input {
@@ -570,7 +646,7 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   color: rgba(255, 255, 255, 0.6);
@@ -579,6 +655,11 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+  }
 }
 
 .portfolio-list {

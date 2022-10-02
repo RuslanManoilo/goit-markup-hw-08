@@ -1,9 +1,17 @@
 .features {
-    display: flex;
+    display: block;
 
-    &__item:not(:first-child) {
-        margin-left: 30px;
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
     }
+
+    
+    &__item:not(:first-child) {
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+        }
+    }
+
 }
 
 .features__bg {
@@ -11,10 +19,14 @@
     margin-bottom: 30px;
     
     height: 120px;
-    width: 270px;
+    width: 100%;
     
     background-color: #F5F4FA;
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .features__icon {
@@ -26,6 +38,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
+    text-align: center;
     
     margin-bottom: 10px;
     
