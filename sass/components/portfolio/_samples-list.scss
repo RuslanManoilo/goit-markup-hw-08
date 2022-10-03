@@ -1,16 +1,24 @@
 .samples-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .samples-list__item {
-    &:not(:first-child) {
+    &:not(:last-child) {
         margin-bottom: 30px;
     }
-    
-    &:nth-last-child(-n+3) {
-        margin-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+        &:not(:first-child) {
+            margin-bottom: 30px;
+        }
+        
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
     }
 }
     

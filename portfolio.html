@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -27,10 +27,10 @@
     
                 <ul class="nav-site">
                     <li class="nav-site__item">
-                        <a class="nav-site__link" href="./index.html">Студія</a>
+                        <a class="nav-site__link nav-site__link--current" href="./index.html">Студія</a>
                     </li>
                     <li class="nav-site__item">
-                        <a class="nav-site__link  nav-site__link--current" href="./portfolio.html">Портфоліо</a>
+                        <a class="nav-site__link" href="./portfolio.html">Портфоліо</a>
                     </li>
                     <li class="nav-site__item">
                         <a class="nav-site__link" href="#">Контакти</a>
@@ -55,6 +55,12 @@
                     </a>
                 </li>
             </ul>
+    
+            <button class="menu-button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -231,7 +237,7 @@
     <footer class="footer footer--position">
         <div class="container container--baseline">
             <div class="footer-contacts">
-                <a href="/" class="logo logo--pos logo--white">
+                <a href="/" class="logo logo--position logo--white">
                     <span class="logo__title">Web</span>Studio
                 </a>
     
@@ -306,6 +312,62 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакти</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link-tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link-mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Instagram </a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+    <!-- mobile menu -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 

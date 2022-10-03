@@ -21,6 +21,8 @@
 
 @import './components/social-links';
 
+@import './components/menu';
+
 // header styles
 @import './components/header/page-header';
 
@@ -49,8 +51,6 @@
 @import './components/footer/subscribe-form';
 
 // portfolio styles
-@import './components/portfolio/portfolio-list';
-
 @import './components/portfolio/portfolio-btn';
 
 @import './components/portfolio/samples-list';

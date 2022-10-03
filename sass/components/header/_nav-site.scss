@@ -1,9 +1,10 @@
 .nav-site {
     display: flex;
-    padding: 0;
     margin-left: 93px;
 
-    list-style: none;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
     
 .nav-site__item {

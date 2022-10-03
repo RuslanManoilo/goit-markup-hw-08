@@ -1,3 +1,37 @@
+.portfolio-list {
+    @include centeredFlex();
+
+    &__item:not(:first-child) {
+        @media screen and (min-width: 768px) {
+            margin-left: 8px;
+        }  
+    }
+
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        margin: -4px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.portfolio-list__item {
+    @media screen and (max-width: 767px) {
+        margin: 4px;
+    }
+}
+
 .portfolio-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -19,7 +53,7 @@
                 border $transition,
                 border-radius $transition,
                 box-shadow $transition;
-    
+
     &:hover,
     &:focus {
         background-color: $primary-blue-color;
