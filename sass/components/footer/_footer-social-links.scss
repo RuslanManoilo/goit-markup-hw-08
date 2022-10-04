@@ -1,12 +1,8 @@
 .footer-social-links {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-
-
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
         margin-right: 93px;
+        margin-bottom: 0;
     }
 }
 
@@ -26,7 +22,6 @@
 
 .footer-links {
     @include centeredFlex();
-    padding: 0;
 }
 
 .footer-links__item {

@@ -9,5 +9,7 @@
 .main-nav {
     @include centeredFlex();
 
-    padding: 16px 0;
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+    }
 }

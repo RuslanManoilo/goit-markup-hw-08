@@ -5,6 +5,23 @@
         margin-bottom: 30px;
     }
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    &__item {
+        @media screen and (min-width: 768px) {
+            margin: 15px;
+            width: calc((100% - 2 * 30px) / 2);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
     
     &__item:not(:first-child) {
         @media screen and (min-width: 1200px) {
@@ -43,6 +60,10 @@
     margin-bottom: 10px;
     
     color: $primary-black-color;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .features__text {

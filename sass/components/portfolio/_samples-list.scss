@@ -1,4 +1,9 @@
 .samples-list {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
@@ -8,15 +13,25 @@
 
 .samples-list__item {
     &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        &:not(:first-child) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
+    }
+
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+        margin: 15px;
+        width: calc((100% - 2 * 30px) / 2);
+    }
+
+    
+    &:not(:first-child) {
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 30px;
+        }
+    }
         
-        &:nth-last-child(-n+3) {
+    &:nth-last-child(-n+3) {
+        @media screen and (min-width: 1200px) {
             margin-bottom: 0;
         }
     }

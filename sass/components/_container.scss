@@ -14,7 +14,25 @@
     }
 }
 
-.container--baseline {
+.container--position {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 60px;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
