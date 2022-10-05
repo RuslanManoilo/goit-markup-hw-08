@@ -146,21 +146,37 @@
                 <ul class="about-list">
                     <li class="about-list__item">
                         <div class="about-list__box">
-                            <a href="#"><img src="./images/img1.jpg" alt="Статистика" width="370">
+                            <a href="#">
+                                <img
+                                    srcset="./images/about/img1-l-@1x.jpg 1x, ./images/about/img1-l-@2x.jpg 2x"
+                                    src="./images/img1.jpg"
+                                    alt="Статистика"
+                                    width="370">
                                 <h3 class="about-list__title">ДЕСКТОПНІ ДОДАТКИ</h3>
                             </a> 
                         </div>
                     </li>
                     <li class="about-list__item">
                         <div class="about-list__box">
-                            <a href="#"><img src="./images/img2.jpg" alt="Аналіз" width="370">
+                            <a href="#">
+                                <img
+                                    srcset="./images/about/img2-l-@1x.jpg 1x, ./images/about/img2-l-@2x.jpg 2x"
+                                    src="./images/img2.jpg" 
+                                    alt="Аналіз" 
+                                    width="370"
+                                >
                                 <h3 class="about-list__title">МОБІЛЬНІ ДОДАТКИ</h3>
                             </a>
                         </div>
                     </li>
                     <li class="about-list__item">
                         <div class="about-list__box">
-                            <a href="#"><img src="./images/img3.jpg" alt="Дизайн" width="370">
+                            <a href="#">
+                                <img
+                                    srcset="./images/about/img3-l-@1x.jpg 1x, ./images/about/img3-l-@2x.jpg 2x"
+                                    src="./images/img3.jpg"
+                                    alt="Дизайн"
+                                    width="370">
                                 <h3 class="about-list__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
                             </a>                            
                         </div>
@@ -178,7 +194,31 @@
                 
                 <ul class="team-list">
                     <li class="team-list__bg">
-                        <img src="./images/imgc1.jpg" alt="Игорь Демьяненко" width="270">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/team/img-1-mob-@1x.jpg 1x, ./images/team/img-1-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Tablet -->
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="./images/team/img-1-tab-@1x.jpg 1x, ./images/team/img-1-tab-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Mobile -->
+                            <source
+                                media="(min-width: 480px)"
+                                srcset="./images/team/img-1-mob-@1x.jpg 1x, ./images/team/img-1-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <img
+                                class="team-list__img"
+                                src="./images/team/img-1-mob-@1x.jpg"
+                                alt="Игорь Демьяненко"
+                            >
+                        </picture>
                         <div class="team-list__meta">
                             <h3 class="team-list__title">
                                 Ігор Дем'яненко
@@ -219,7 +259,31 @@
                         </div>                        
                     </li>
                     <li class="team-list__bg">
-                        <img src="./images/imgc2.jpg" alt="Ольга Репина" width="270">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/team/img-2-mob-@1x.jpg 1x, ./images/team/img-2-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Tablet -->
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="./images/team/img-2-tab-@1x.jpg 1x, ./images/team/img-2-tab-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Mobile -->
+                            <source
+                                media="(min-width: 480px)"
+                                srcset="./images/team/img-2-mob-@1x.jpg 1x, ./images/team/img-2-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <img
+                                class="team-list__img"
+                                src="./images/team/img-2-mob-@1x.jpg"
+                                alt="Ольга Репина"
+                            >
+                        </picture>
                         <div class="team-list__meta">
                             <h3 class="team-list__title">
                                 Ольга Рєпіна
@@ -260,7 +324,31 @@
                         </div>                        
                     </li>
                     <li class="team-list__bg">
-                        <img src="./images/imgc3.jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/team/img-3-mob-@1x.jpg 1x, ./images/team/img-3-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Tablet -->
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="./images/team/img-3-tab-@1x.jpg 1x, ./images/team/img-3-tab-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Mobile -->
+                            <source
+                                media="(min-width: 480px)"
+                                srcset="./images/team/img-3-mob-@1x.jpg 1x, ./images/team/img-3-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <img
+                                class="team-list__img"
+                                src="./images/team/img-3-mob-@1x.jpg"
+                                alt="Николай Тарасов"
+                            >
+                        </picture>
                         <div class="team-list__meta">
                             <h3 class="team-list__title">
                                 Микола Тарасов
@@ -301,7 +389,31 @@
                         </div>                        
                     </li>
                     <li class="team-list__bg">
-                        <img src="./images/imgc4.jpg" alt="Михаил Ермаков" width="270">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/team/img-4-mob-@1x.jpg 1x, ./images/team/img-4-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Tablet -->
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="./images/team/img-4-tab-@1x.jpg 1x, ./images/team/img-4-tab-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <!-- Mobile -->
+                            <source
+                                media="(min-width: 480px)"
+                                srcset="./images/team/img-4-mob-@1x.jpg 1x, ./images/team/img-4-mob-@2x.jpg 2x"
+                                type="image/jpg"
+                            >
+                            <img
+                                class="team-list__img"
+                                src="./images/team/img-4-mob-@1x.jpg"
+                                alt="Михаил Ермаков"
+                            >
+                        </picture>
                         <div class="team-list__meta">
                             <h3 class="team-list__title">
                                 Михайло Єрмаков

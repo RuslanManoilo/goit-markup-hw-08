@@ -18,10 +18,16 @@
         }
     }
 
-    @media screen and(min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2);
     }
+        //test
+    &:not(:first-child) {
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                margin-bottom: 30px;
+            }
+        }
 
     
     &:not(:first-child) {
@@ -79,6 +85,14 @@
     .samples-list__decor:focus &::before {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.samples-list__img {
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
     }
 }
 

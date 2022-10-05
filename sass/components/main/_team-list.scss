@@ -42,6 +42,12 @@
     }
 }
 
+.team-list__img {
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
 .team-list__meta {
     padding-top: 30px;
     padding-bottom: 24px;
