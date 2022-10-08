@@ -2,11 +2,15 @@
     display: flex;
 
     @media screen and (max-width: 1199px) {
-        display: block;
+        flex-direction: column;
     }
 }
 
 .subscribe-form__label {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-right: 12px;
     }
@@ -22,10 +26,8 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    
-    width: 450px;
+
     height: 50px;
-    
     padding: 15px 16px;
     
     color: rgba(255, 255, 255, 0.6);

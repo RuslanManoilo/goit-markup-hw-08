@@ -2,8 +2,8 @@
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+        margin-left: auto;
     }
 
     &__item:not(:last-child) {
@@ -28,7 +28,9 @@
 }
     
 .nav-contacts__link {
-    @include centeredFlex();
+    @media screen and (min-width: 1200px) {
+        @include centeredFlex();
+    }
     
     fill: currentColor;
     color: $primary-text-color;

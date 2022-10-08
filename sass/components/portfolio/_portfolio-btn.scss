@@ -12,8 +12,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 15px 8px;
 
-        margin: -4px;
         margin-bottom: 40px;
     }
 
@@ -23,12 +23,6 @@
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
-    }
-}
-
-.portfolio-list__item {
-    @media screen and (max-width: 767px) {
-        margin: 4px;
     }
 }
 

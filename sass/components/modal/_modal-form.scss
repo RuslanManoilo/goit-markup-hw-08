@@ -113,7 +113,7 @@
 .modal-form__input-checkbox:checked+& {
         border-color: $primary-blue-color;
         background-color: $primary-blue-color;
-        background-image: url('../../images/icon-check.svg');
+        background-image: url('../images/icon-check.svg');
         background-size: contain;
         background-origin: border-box;
     }
