@@ -10,8 +10,6 @@
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
-
-        margin: 0;
     } 
 }
 
@@ -25,7 +23,6 @@
         margin: 15px;
         width: calc((100% - 3 * 30px) / 3);
     }
-    
 }
 
 .customers-list__icon {
@@ -51,8 +48,8 @@
 
     &:hover,
     &:focus {
-            border: 1px solid $primary-blue-color;
-            border-radius: 4px;
-            color: $primary-blue-color;
-        }
+        border: 1px solid $primary-blue-color;
+        border-radius: 4px;
+        color: $primary-blue-color;
+    }
 }
